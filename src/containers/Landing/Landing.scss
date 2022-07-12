@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@300;400&family=Rubik:ital,wght@0,500;1,900&display=swap');
+$padding-amount: 15px;
+
+.landing{
+    height: 100vh;
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #d14f4f;
+
+    .nasa-data{
+        display: grid;
+        padding: 0px 10px;
+        grid-template-areas: "image" "information";
+        // border: 1px solid yellow;
+        height: 100%;
+    
+        img{
+            width: 95%;
+            height: 95%;
+            margin: auto;
+            grid-area: image;
+        }
+    
+        .information{
+            display: grid;
+            // border: 1px purple solid;
+            height: 95%;
+            grid-area: information;
+            grid-template-rows: 15% auto 5%;
+    
+            .title-wrapper{
+                padding: $padding-amount;
+                // border: 1px solid salmon;
+    
+                .title{
+                    font-size: 30px;
+                    font-weight: 900;
+                }
+    
+                .date{
+                    font-size: 20px;
+                }
+            }
+    
+            .explanation{
+                font-size: 20px;
+                color: aliceblue;
+                padding: $padding-amount;
+                // border: 1px solid f uchsia;
+            }
+
+            .error-message{
+                color:#d14f4f;
+            }
+
+            .input-wrapper{
+                display: flex;
+
+                button{
+                    color: aliceblue;
+                    background-color: #d14f4f;
+                    border: none;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    transition: 0.3s;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: adjust-hue($color: #d14f4f, $degrees: 10);
+                    }
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                grid-template-rows: 20% auto 5%;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            grid-template-areas: "image information";
+            grid-template-columns: 40% auto;
+        }
+    }
+}
