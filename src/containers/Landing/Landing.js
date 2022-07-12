@@ -34,7 +34,6 @@ export default function Landing() {
                 return
             }
 
-            console.log("res:", result);
             setNasaData(result)
         } catch (error) {
             console.log("error:", error);
