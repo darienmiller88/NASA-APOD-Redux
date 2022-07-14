@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Landing page
+<img width="960" alt="demo1" src="https://user-images.githubusercontent.com/32966645/178888440-81058189-50a4-40d2-b8d7-d9b74cb2d5bd.png">
+
+## Choosing another date
+<img width="960" alt="demo2" src="https://user-images.githubusercontent.com/32966645/178888746-b14f0d7e-9e51-4f84-9adc-ed1cb56a74c0.png">
+
+## Error message for picking an invalid date
+<img width="959" alt="demo3" src="https://user-images.githubusercontent.com/32966645/178889542-2264b8d8-e2ce-4e03-befb-ed8819e8f767.png">
+
+
 ## Available Scripts
 
 In the project directory, you can run:
